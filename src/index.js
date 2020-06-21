@@ -14,13 +14,12 @@ function SkiResort() {
   )
 }
 
-function App {
+function App() {
   return (
     <>
       <Lake />
       <SkiResort />
-    </>
-    
+    </> 
   )
 }
 
