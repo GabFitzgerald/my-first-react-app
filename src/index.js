@@ -2,12 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-const lakeList = [
-  {id: "1", name: "Echo", trailhead: "Echo"},
-  {id: "2", name: "Maud", trailhead: "Wrights"},
-  {id: "3", name: "Velma", trailhead: "Bayview"}
-]
-
 const list = [1, 2, 3, 4, 5]
 
 function App({items}) {
