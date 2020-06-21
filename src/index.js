@@ -2,26 +2,22 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Checkbox() {
-  const [checked, setChecked] = useState(false)
-  useEffect(() => {
-    alert(`check: ${checked.toString()}`)
-  })
+function App() {
   return (
     <>
-      <input 
-        type="checkbox" 
-        value={checked} 
-        onChange={() => 
-          setChecked(checked => !checked)
-        }
-      />  
-      {checked ? "checked" : "not checked"}
+      <label>
+        Favorite Phrase:
+        <input />
+      </label>
+      <label>
+        Second Favorite Phrase:
+        <input />
+      </label>
     </>
   )
 }
 
 ReactDOM.render(
-  <Checkbox />,
+  <App />,
   document.getElementById('root')
 );
