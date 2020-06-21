@@ -14,7 +14,8 @@ function GitHubUser({login}) {
   if(data) {
     return (
       <div>
-        {JSON.stringify(data)}
+        <h1>{data.login}</h1>
+        <img src={data.avatar_url} width={100} />
       </div>
     )
   }
