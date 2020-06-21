@@ -16,10 +16,10 @@ function SkiResort() {
 
 function App {
   return (
-    <React.Fragment>
+    <>
       <Lake />
       <SkiResort />
-    </React.Fragment>
+    </>
     
   )
 }
