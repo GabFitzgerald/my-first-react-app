@@ -10,6 +10,9 @@ function App() {
       <button onClick={() => setStatus("Open")}>
         Open
       </button>
+      <button onClick={() => setStatus("Back in 5")}>
+        Break
+      </button>
       <button onClick={() => setStatus("Closed")}>
         Closed
       </button>
