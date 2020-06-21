@@ -28,3 +28,13 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
+
+const [first, second, third] = [
+  "popcorn",
+  "pretzels",
+  "pineapple"
+]
+
+console.log(first)
+console.log(second)
+console.log(third)
