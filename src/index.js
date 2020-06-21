@@ -1,25 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Lake() {
-  return (
-    <h1> Visit Lake!</h1>
-  )
-} 
-
-function SkiResort() {
-  return (
-      <h1>Visit Ski Resort!</h1>
-  )
-}
-
 function App() {
+  const [status] = useState("Open")
   return (
-    <>
-      <Lake />
-      <SkiResort />
-    </> 
+    <div>
+      <h1>Status: {status}</h1>
+    </div> 
   )
 }
 
@@ -27,13 +15,3 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
-
-const [first, second, third] = [
-  "popcorn",
-  "pretzels",
-  "pineapple"
-]
-
-console.log(first)
-console.log(second)
-console.log(third)
