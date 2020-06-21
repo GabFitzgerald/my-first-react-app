@@ -8,19 +8,19 @@ const lakeList = [
   {id: "3", name: "Velma", trailhead: "Bayview"}
 ]
 
-function App({lakes}) {
+const list = [1, 2, 3, 4, 5]
+
+function App({items}) {
   return (
-    <div>
-      {lakes.map(lake => (
-      <div key={lake.id}>
-        <h2>{lake.name}</h2>
-        <p>Accessed by: {lake.trailhead} </p>
-      </div>))}
-    </div>
+   <ul>
+     {items.map(item => (
+      <li key={item.toString()}>{item}</li>
+     ))}
+   </ul>
   )
 }
 
 ReactDOM.render(
-  <App lakes={lakeList}/>,
+  <App items={list}/>,
   document.getElementById('root')
 );
