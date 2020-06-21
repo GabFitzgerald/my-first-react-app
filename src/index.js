@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Hello(props) {
-  console.log(props)
+function Hello(library, message, number) {
   return (
     <div>
-      <h1>Welcome to {props.library}!</h1>
-      <p>Let's build something cool.</p>
+      <h1>Welcome to {library}!</h1>
+      <p>Let's {message}.</p>
+      <p>{number} Props Total</p> 
     </div> 
   )
 }
 
 ReactDOM.render(
-  <Hello library="React" />,
+  <Hello library="React" message="Have fun" number={3} />,
   document.getElementById('root')
 );
